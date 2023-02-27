@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            rel="stylesheet">
+
+    <title>Sanket</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h3 class="mt-3">ISL to Text</h3>
+                <div class="row">
+                    <a href="{{ url_for('main.index') }}" class="btn btn-danger text-left">
+                        Back
+                    </a>
+                    <!-- <form action="/islrecognition" method="post" class="text-center">
+                        <button type="submit" name="choice" value="start" class="btn btn-primary">Start</button>
+                        <button type="submit" name="choice" value="stop" class="btn btn-primary">Stop</button>
+                    </form> -->
+                </div>
+                <div>
+                    <img src="{{ url_for('main.video_feed') }}">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
